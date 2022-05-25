@@ -17,3 +17,23 @@ print(a, l)
 a = l[:]
 a[0] = 10000
 print(a, l)
+
+# 2. dict: 字典(組合多個東西變成一個複雜型態)
+# [人, 人, 人]
+person = {
+    "name":"Elwing",
+    "height":175,
+    "weight":80
+}
+print(person["name"])
+# 名字 -> 字典[key]
+person["height"] = person["height"] + 5
+print(person)
+person["over18"] = True
+print(person)
+
+
+
+
+
+
