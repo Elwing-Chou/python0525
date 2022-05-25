@@ -32,7 +32,23 @@ print(person)
 person["over18"] = True
 print(person)
 
+# 3. set: 不重複, 且沒有順序, 查找快速(hash)
+# hash: 大集合 -> 小集合(查詢)
+# set查找快速是因為他偷偷做了一個hash的key
+names = {"周", "王", "周"}
+print(names)
 
+# 4. tuple: 簡化版的字典, 用順序來代表每個東西 RGB:
+rgb = (255, 255, 255)
+# !!! 如果你想當成字典的key, 或者你想要放在set
+# 你必須是hashable(immutable)
+# 不可以 s = {[1, 2]}
+# 可以
+s = {(1, 2), (3, 4)}
+print(s)
+# 不可以 d = {[1, 2]:3}
+d = {(1, 2):10}
+print(d)
 
 
 
