@@ -24,3 +24,26 @@ print(s[3:1:-1])
 print(s[::-1])
 
 print("apple" == "apple")
+
+# 3. 布林
+a = True
+b = False
+
+print(not 6 > 5)
+print(not "ap" in "apple")
+
+# 而且: and 或者: or
+# 2 < a < 10
+a = 5
+print(2 < a < 6)
+print(a > 2 and a < 6)
+print(a > 3 or a < -2)
+
+# 4. 無
+a = None
+print(a == None)
+# 瑣碎
+# is: == 進階, 不僅值相等, 還必須是同一個東西
+print(a is None)
+print(not a is None)
+print(a is not None)
