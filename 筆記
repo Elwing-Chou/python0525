@@ -7,3 +7,23 @@ python: height = 175
 強型別(完全不做隱轉型): "abc" + 2 出紅字
 
 repl.it
+
+不管是參數的傳入或者是=操作
+b = a -> a裡面的東西複製一份給b(always有兩份)
+
+型態 -> 1. Mutable(可變成可變短) 2. Immutable(不能變長變短）
+int/str/boolean...:Immutable
+list/set/dict:Mutable
+
+型態是以什麼方式儲存在記憶體呢?
+
+Immutable:
+a = 5(有一塊記憶體, 裡面放5) b = a(新創一塊記憶體, 裡面放5)
+
+Mutable:
+a = [1, 2, 3]
+某塊特別記憶體區域創造[1, 2, 3]
+接著把這塊記憶體位置拿出來 0xff
+事實上 a = 0xff
+所以呢 b = a(新創一塊記憶體, 裡面放0xff)
+雖然你們是獨立的兩個東西沒錯, 但修改的還是最後那棟房子
